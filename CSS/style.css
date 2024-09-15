@@ -1,0 +1,440 @@
+/*universal styles*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Source Serif 4";
+    box-sizing: border-box;
+  }
+  
+  
+  html {
+    font-size: 16px;
+  }
+  
+  
+  .center {
+    text-align: center;
+  }
+  
+  
+  /*Navigation Bar*/
+  
+  
+  #desktop {
+    display: grid;
+    width: 100%;
+    max-height: 7rem;
+    position: fixed;
+    z-index: 4;
+    padding: 1rem;
+    align-items: center;
+    grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+  }
+  
+  
+  #logo {
+    font-family: Pacifico;
+    text-decoration: none;
+    color: hsl(225, 80%, 50%);
+    font-size: 5rem;
+    position: relative;
+    bottom: 3rem;
+    left: 2rem;
+    max-width: 15rem;
+  }
+  
+  #logo-mobile {
+    font-family: Pacifico;
+    text-decoration: none;
+    color: hsl(225, 80%, 50%);
+    font-size: 5rem;
+    position: relative;
+    bottom: 2.6rem;
+  }
+  
+  .link {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #FFFAF0;
+    text-decoration: none;
+    font-family: "Merriweather";
+    position: relative;
+    bottom: 2rem;
+    min-width: 8rem;
+  }
+  
+  nav a:hover {
+    color: skyblue;
+    transition: color 400ms linear;
+  }
+  
+  
+  nav a:active {
+    font-size: .9rem;
+  }
+  
+  
+  #mobile {
+    display: none;
+  }
+  
+  
+  @media only screen and (max-width: 800px) {
+    #desktop{
+      display: none;
+    }
+  
+  
+    #mobile {
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      width: 100%;
+      height: 5rem;
+      z-index: 1;
+      position: fixed;
+    }
+  
+  
+    #mobile img {
+      width: 4rem;
+      height: 4rem;
+      z-index: 1;
+      margin-top: 0.5rem;
+    }
+  
+  
+  }
+  
+  
+  /*testimonial*/
+  
+  
+  #testimonial-section {
+    display: flex;
+    flex-direction: columns;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: hsla(0, 0%, 90%);
+    padding: 1rem;
+    align-items: center;
+    min-height: 58rem;
+    flex-wrap: wrap;
+    background-image: url("https://media.istockphoto.com/id/1292003010/photo/medical-student-at-home.jpg?s=2048x2048&w=is&k=20&c=RmEbti_IqVDpMCA7XNF2HxOZFznJ5taY119svs9GgVc=");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  #testimonial-section-cta {
+    max-width: 30rem;
+  }
+  
+  
+  #testimonial-section-cta h1 {
+    font-size: 3rem;
+    /*font-family: "Shadows Into Light"*/
+    grid-area: h1;
+  }
+  
+  
+  #testimonial-section-cta p {
+    font-size: 1.5rem;
+    /*font-family: "M Plus 1";*/
+    grid-area: p;
+  }
+  
+  
+  .button {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0px 5px;
+    cursor: pointer;
+  }
+  
+  
+  .button:hover {
+    background-color: #DCDCDC;
+  }
+  
+  
+  .button:active {
+    position: relative;
+    top: 5px;
+    color: black;
+    box-shadow: 0px 0px;
+  }
+  
+  
+  
+  
+  /*Problem section*/
+  
+  
+  .problem-section{
+    background-color: f2f2f2;
+    display: flex;
+    padding: 3rem;
+    gap: 2rem;
+    min-height: 40rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  
+  .problem-section video {
+    min-width: 30rem;
+  }
+  
+  
+  .problem-cta{
+    max-width: 40rem;
+  }
+  
+  @media (max-width: 800px) {
+    .probelm-section {
+      text-align: center;
+    }
+    
+    .problems-cta {
+      min-width: 100%;
+    }
+  @media (min-width: 801px) {
+    .problem-cta {
+      min-width: 20rem; /* Adjust for larger screens if needed */
+    }
+    }
+  }
+  /*Benefits Section*/
+  
+  
+  .benefits-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 30%));
+    gap: 3rem;
+    min-height: 30rem;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+    text-align: center;
+    background-color: #d5f7e7;
+  }
+  
+  
+  .benefits-section img {
+    width: 5rem;
+  }
+  
+  
+  .benefits-section section {
+    min-height: 15rem;
+  }
+  
+  
+  /*Features section*/
+  
+  #features-section {
+    background-color: #F0F8FF;
+    padding: 5rem;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 5rem; /* Space between feature items */
+    padding: 10rem 0rem 10rem 0rem;
+    position: sticky;
+    top: 5rem;
+  }
+  
+  .sticky-title, .sticky-description, .sticky-image {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  
+  .sticky-title {
+    background-color: #F0F8FF; /* Match background to avoid overlay issues */
+    padding: 1rem;
+    flex: 1;
+    border: 1px solid black;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1); /* Border shadow */
+  }
+  
+  .sticky-description {
+    background-color: #F0F8FF;
+    padding: 1rem;
+    flex: 2;
+  }
+  
+  .sticky-image {
+    background-color: #F0F8FF;
+    padding: 1rem;
+    flex: 1;
+  }
+  
+  .image-container {
+    height: auto;
+    max-width: 20rem;
+    min-width: 10rem;
+    width: 100%;
+  }
+  
+  @media (max-width: 800px) {
+    .feature-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sticky-title {
+      max-width: 10rem;
+      box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    }
+  
+    .sticky-title, .sticky-description, .sticky-image {
+      position: relative; /* Disable sticky positioning on small screens */
+      top: 0;
+      width: 100%
+    }
+  
+    .image-container{
+      height: auto;
+      max-width: 5rem;
+    }
+  }
+  
+  /*Products Section*/
+  
+  #products-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height for better centering */
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  #products-cta {
+    border: 1px solid #ccc;
+    width: clamp(15rem, 50%, 30rem); /* More flexible width */
+    margin: auto;
+    padding: 2rem;
+    background-color: #F0F8FF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #products-cta p {
+    padding: 1rem;
+    background-color: #FAEBD7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    font-family: 'Arial', sans-serif; /* Better typography */
+    color: #333;
+  }
+  
+  #products-cta button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #4CAF50, #8BC34A); /* Gradient for modern look */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  #products-cta button:hover {
+    background: linear-gradient(135deg, #45a049, #78c257); /* Slightly different gradient on hover */
+  }
+  
+  #products-cta button:active {
+    transform: translateY(2px); /* Slight push effect */
+  }
+  
+  button a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from button */
+  }
+  /*About Us*/
+  
+  #About-us {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background: #FFFAF0;
+    text-align: center;
+    grid-template-areas:
+    "about article article"
+    "title article article"
+    "title article article"
+    "title article article"
+    "information list list";
+    width: 100%;
+    min-height: 50rem;
+  }
+  
+  .about {
+  
+    min-width: 10rem;
+    max-height: 3rem;
+    font-size: clamp(20px, 2vw, 30px);
+    grid-area: about;
+  }
+  
+  .title {
+  
+    grid-area: title;
+  }
+  
+  .article {
+  
+    grid-area: article;
+  }
+  
+  .information {
+  
+    grid-area: information;
+  }
+  
+  .list {
+    text-align: left;
+    padding: 1rem;
+    list-style-type: disc;
+    margin-left: 2rem;
+    grid-area: list;
+  }
+  
+  /*footer*/
+  #contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 5rem;
+    width: 100%;
+    background-color: #A9A9A9;
+  }
+  
+  
+  #contact-section .image-container {
+    width: 3rem;
+  }
+  
+  
+   #copyright {
+   
+  }
+  
