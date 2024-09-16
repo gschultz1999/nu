@@ -57,6 +57,10 @@ class Question {
     nextQuestion();
   }
   
+  document.getElementById('restartButton').addEventListener('click', function() {
+    location.reload();
+  });
+
   function nextQuestion() {
     adjustDifficulty();
     const questionsByDifficulty = getQuestionsByDifficulty(currentDifficulty);
