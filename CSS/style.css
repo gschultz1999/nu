@@ -264,7 +264,7 @@
   }
   
   .sticky-title {
-    background-color: #F0F8FF; /* Match background to avoid overlay issues */
+    background-color: transparent; /*#F0F8FF; /* Match background to avoid overlay issues */
     padding: 1rem;
     flex: 1;
     border: 1px solid black;
@@ -434,7 +434,4 @@
   }
   
   
-   #copyright {
-   
-  }
   
