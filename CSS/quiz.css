@@ -4,8 +4,6 @@
     scroll-behavior: smooth;
     font-family: "Source Serif 4";
     box-sizing: border-box;
-    background-color: lightblue;
-
   }
   
   
@@ -19,6 +17,11 @@
   }
   
   /*nav bar*/
+  .content {
+    background-color: rgba(71, 113, 235, 1);
+    height: 5rem;
+  }
+
   #desktop {
     display: grid;
     width: 100%;
@@ -105,48 +108,24 @@
   
   
   }
-  
+  body {
+    background-color: lightblue;
+  }
   /*quiz container*/
   #quiz-container {
     position: relative;
-    display: grid;
     color: white;
-    top: 10rem;
     align-items: center;
     justify-items: left;
     width: 50%;
-    left: 25%;
   }
 
-  .questions {
-    color: blue;
-  }
-
-  #quiz-container h1{
+  #quiz-container{
     border: 1px solid black;
     align-self: center;
   }
-  
-  /*button*/
+
   button {
-    position: inline-block;
-    border: 1px solid black;
-    border-radius: 5px;
-    text-decoration: none;
-    box-shadow: 0px 3px;
-    cursor: pointer;
-    background-color: white;
-    z-index: 1;
-    margin: 1rem;
-    padding: 1rem;
-  }
-  
-  button:hover {
-    background-color: lightgray;
-  }
-  
-  button:active {
-    border: none;
-    box-shadow: 1px 1.5px;
-    background-color: darkgray;
+    height: 2rem;
+    width: 5rem;
   }
