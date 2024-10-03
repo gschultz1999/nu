@@ -218,27 +218,27 @@
   
   
   .benefits-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 30%));
-    gap: 3rem;
-    min-height: 30rem;
-    align-items: center;
-    justify-content: center;
-    padding: 10rem;
-    text-align: center;
     background-color: #d5f7e7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5rem;
+    gap: 3rem;
+    text-align: center;
   }
   
   
   .benefits-section img {
-    width: 5rem;
+    max-width: 7rem;
+    min-width: 3rem;
   }
   
   
   .benefits-section section {
-    min-height: 15rem;
+    max-width: 20rem;
   }
-  
+
   
   /*Features section*/
   
@@ -252,15 +252,7 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    margin-bottom: 5rem; /* Space between feature items */
     padding: 10rem 0rem 10rem 0rem;
-    position: sticky;
-    top: 5rem;
-  }
-  
-  .sticky-title, .sticky-description, .sticky-image {
-    position: -webkit-sticky;
-    position: sticky;
   }
   
   .sticky-title {
@@ -283,6 +275,7 @@
     flex: 1;
   }
   
+
   .image-container {
     height: auto;
     max-width: 20rem;
