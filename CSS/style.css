@@ -121,7 +121,7 @@
     color: hsla(0, 0%, 90%);
     padding: 1rem;
     align-items: center;
-    min-height: 58rem;
+    height: 100svh;
     flex-wrap: wrap;
     background-image: url("https://media.istockphoto.com/id/1292003010/photo/medical-student-at-home.jpg?s=2048x2048&w=is&k=20&c=RmEbti_IqVDpMCA7XNF2HxOZFznJ5taY119svs9GgVc=");
     background-repeat: no-repeat;
@@ -365,50 +365,109 @@
   
   #About-us {
     display: grid;
-    background-color: #a8dadc;
-    color: #333333;
-    grid-template-areas:
-    "about about about"
-    "article article article"
-    "article article article"
-    "title  title title"
-    "information list list";
+    background: linear-gradient(to left, #3fd1d6, #a8dadc);
     width: 100%;
-    height: 100svh;
-    padding: 3rem;
+    padding: 5rem;
+    grid-template-areas: 
+    "about about about"
+    "title title title"
+    "article article me";
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
   }
   
+  .me {
+    width: 10rem; 
+    border-radius: 50%;
+  }
+
   .about {
-    font-size: clamp(20px, 2vw, 30px);
+    font-size: 6vmin;
     grid-area: about;
+    color: #5e7f9d;
+    font-weight: 900;
   }
   
   .title {
     grid-area: title;
     font-size: 1.5rem;
+    color: #30618e;
+   
   }
   
   .article {
     grid-area: article;
+    color: #033b6f;
+    font-size: 1rem;
+    font-weight: 600;
   }
   
-  /*footer*/
+  /*contact section*/
   #contact-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 5rem;
+    display: grid;
+    height: 100svh;
     width: 100%;
-    background-color: #8c8c8c;
-    color: white;
+    background-color: #fce3e6;
+    color: black;
+    justify-content: center;
+    align-items: center;
   }
   
+  .contact-content {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 4rem;
+    width: 30rem;
+    grid-template-areas: 
+    "title title title title"
+    "first-name first-name last-name last-name"
+    "fnt fnt lnt lnt"
+    "email email email email"
+    "et et et et"
+    "p p p p"
+    "button button button button";
+  }
+
+  .contact-content > .title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
   
   #contact-section .image-container {
     width: 3rem;
   }
   
-  .footer {
-    background-color: 
+  .contact-content textarea{
+    width: 5rem;
+    border: 1px solid black;
+    border-radius: 5%;
   }
+
+  /*Footer*/
+  .footer {
+    display: flex;
+    background-color: #343434;
+    padding: 3rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copy {
+    padding-right: 2rem;
+    font-size: 1.5rem;
+    max-width: 50%;
+    color: #565656;
+  }
+
+  .tospp a{
+    padding: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #565656;
+  }
+
   
