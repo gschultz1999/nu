@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: "Source Serif 4";
+    font-family: "Source Serif 4", Roboto;
     box-sizing: border-box;
   }
   
@@ -39,13 +39,18 @@
     font-family: Pacifico;
     text-decoration: none;
     color: hsl(225, 80%, 50%);
-    font-size: 5rem;
+    font-size: 8rem;
     position: relative;
     bottom: 3rem;
     left: 2rem;
     max-width: 15rem;
   }
   
+  #logo:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+  }
+
   #logo-mobile {
     font-family: Pacifico;
     text-decoration: none;
@@ -57,7 +62,7 @@
   
   .link {
     line-height: 1.6;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #FFFAF0;
     text-decoration: none;
     font-family: "Merriweather";
@@ -368,43 +373,76 @@
   /*About Us*/
   
   #About-us {
-    display: grid;
     background: linear-gradient(to left, #3fd1d6, #a8dadc);
     width: 100%;
-    padding: 5rem;
-    grid-template-areas: 
-    "about about about"
-    "title title title"
-    "article article me";
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+    padding: 10rem 3rem;
   }
   
+  .container {
+    display: flex;
+    width: 80%;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .about-us_text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 5rem;
+  }
+
+  .about-us_img {
+    margin: 0 auto;
+  }
+
   .me {
-    width: 10rem; 
+    width: clamp(20rem, 10vw, 40rem);
     border-radius: 50%;
   }
 
   .about {
-    font-size: 6vmin;
-    grid-area: about;
-    color: #5e7f9d;
+    font-size: clamp(2rem, 2vw, 4rem);
     font-weight: 900;
+    margin-bottom: 5rem;
+    text-align: center;
   }
   
   .title {
-    grid-area: title;
-    font-size: 1.5rem;
-    color: #30618e;
-   
+    font-size: clamp(1.5rem, 1vw, 2.5rem);
+    font-weight: 600;
+    margin-bottom: 2rem;
   }
   
   .article {
     grid-area: article;
     color: #033b6f;
-    font-size: 1rem;
+    font-size: clamp(1rem, 1vw, 1.5rem);
     font-weight: 600;
+  }
+
+  @media (max-width: 80rem) {
+    #About-us {
+      padding: 1rem;
+    }
+    
+    .container {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 60rem) {
+
+    .about-us_img {
+      display: none;
+    }
+
+    .about-us_text {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
   
   /*contact section*/
