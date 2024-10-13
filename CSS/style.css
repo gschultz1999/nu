@@ -249,6 +249,7 @@
   
   .feature-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     text-align: center;
@@ -257,15 +258,18 @@
   
   .sticky-title {
     background-color: transparent; /*#F0F8FF; /* Match background to avoid overlay issues */
-    padding: 1rem;
+    padding: 1em;
     flex: 1;
-    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1); /* Border shadow */
+    border: 1px solid black;
+    font-size: 2rem;
+    color: #87629A;
   }
   
   .sticky-description {
     background-color: #F0F8FF;
     padding: 1rem;
-    flex: 2;
+    flex: 1;
+    font-size: 1.5rem;
   }
   
   .sticky-image {
