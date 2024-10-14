@@ -18,6 +18,9 @@
     text-align: center;
   }
   
+  img {
+    max-width: 100%;
+  }
   
   /*Navigation Bar*/
   
@@ -77,10 +80,13 @@
   
   
   nav a:active {
-    font-size: .9rem;
+    color: black;
   }
   
-  
+  #logo:active {
+    opacity: 1;
+  }
+
   #mobile {
     display: none;
   }
@@ -437,8 +443,12 @@
 
   @media (max-width: 60rem) {
 
+    .container {
+      flex-direction: column;
+    }
+
     .about-us_img {
-      display: none;
+      padding-top: 3rem;
     }
 
     .about-us_text {
