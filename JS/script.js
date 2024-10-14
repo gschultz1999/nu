@@ -20,3 +20,13 @@ document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener("scroll", function() {
     const featureItems = document.querySelectorAll(".feature-item");
 });
+// Wait for the DOM to be fully loaded before running the script
+document.addEventListener('DOMContentLoaded', function () {
+  // Initialize Flickity
+  var elem = document.querySelector('.main-carousel');
+  var flkty = new Flickity(elem, {
+    // Options
+    cellAlign: 'left',
+    contain: true
+  });
+});

@@ -67,6 +67,7 @@
     font-family: "Merriweather";
     min-width: 8rem;
     margin: 1rem;
+
   }
   
   nav a:hover {
@@ -177,48 +178,45 @@
   
   
   /*Problem section*/
-  
-  
-  .problem-section{
-    background-color: f2f2f2;
+
+  .problem-section {
+    background-color: white;
+    padding: 5rem;
+    margin: 0 auto;
     display: flex;
-    padding: 3rem;
-    gap: 2rem;
-    min-height: 40rem;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    
+    flex-direction: column;
   }
-  
-  
-  .problem-section iframe {
-    min-width: 30rem;
-    border: 1rem solid rgb(246, 245, 245);
+
+  .main-carousel {
+    background-color: #8C8;
+    margin: 1rem;
+    border-radius: 10px;
   }
-  
-  
-  .problem-cta{
-    max-width: 40rem;
+
+  .carousel-cell {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    padding: 5rem;
   }
-  
-  @media (max-width: 100rem) {
-    .problem-section {
-      
-    }
-    
-    .problems-cta {
-      min-width: 100%;
-    }
-  @media (min-width: 801px) {
-    .problem-cta {
-      min-width: 20rem; /* Adjust for larger screens if needed */
-    }
-    }
+
+  .problem-section h1 {
+    margin-bottom: 3rem;
   }
-  /*Benefits Section*/
-  
-  
+
+  .vid {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+
+  .intro {
+    font-family: "Shadows Into Light";
+    font-size: 3rem;
+    margin: 0 auto;
+  }
+
+  /* Benefits section */
   .benefits-section {
     background-color: #d5f7e7;
     display: flex;
