@@ -182,32 +182,39 @@
   .problem-section {
     background-color: white;
     padding: 5rem;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
   }
+
+   .center {
+    max-width: 60rem;
+    padding: 5rem;
+    margin: 0 auto;
+  } 
 
   .main-carousel {
     background-color: #8C8;
-    margin: 1rem;
     border-radius: 10px;
+    max-width: 60rem;
+    min-width: 30rem;
   }
 
   .carousel-cell {
-    text-align: center;
     font-size: 24px;
     color: white;
-    padding: 5rem;
+    padding: 4rem;
   }
 
   .problem-section h1 {
     margin-bottom: 3rem;
   }
 
+  .vid-sec {
+    padding-top: 5rem;
+  }
+
   .vid {
-    width: 80%;
+    
     margin: 0 auto;
-    margin-top: 5rem;
   }
 
   .intro {
