@@ -21,6 +21,10 @@
   img {
     max-width: 100%;
   }
+
+  .margin_bottom_1 {
+    margin-bottom: .5rem;
+  }
   
   /*Navigation Bar*/
   
@@ -32,14 +36,14 @@
     z-index: 4;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.2rem;
   }
 
   #logo {
     font-family: Pacifico;
     text-decoration: none;
     color: hsl(225, 80%, 50%);
-    font-size: 7rem;
+    font-size: 5rem;
     display: inline-block;
     line-height: 1;
     position: relative;
@@ -64,7 +68,7 @@
   
   .link {
     line-height: 1.6;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #FFFAF0;
     text-decoration: none;
     font-family: "Merriweather";
@@ -464,57 +468,78 @@
     background-color: #cef7e1;
     display: flex;
     align-items: center;
+    font-family: Roboto;
   }
 
   .contact-hero {
     margin: 0 auto;
-    /* width: 80%; */
-    padding: 3rem;
+    
+  }
+
+  .title {
+    font-weight: 800;
+    font-size: 1.5rem;
   }
   
   .contact-content {
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 5%;
+    border-radius: 1rem;
     padding: 2rem;
-    width: 30rem;
-  }
-
-  .contact-content > .title {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    /* width: 30rem; */
+    gap: 2rem;
+    max-width: 30rem;
+    min-width: 40rem;
   }
 
   .name {
     display: flex;
+    gap: 0.5rem;
   }
 
   .name_container {
     width: 100%;
-    border: 1px solid black;
+    
   }
-
- /*  .name_text {
-    display: flex;
-    flex-direction: column;
-  } */
 
   .text-box {
     resize: none;
     min-width: 100%;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Roboto;
+    color: black;
+    padding: 0.3rem;
+    letter-spacing: 1px;
   }
 
-  
-  #contact-section .image-container {
-    width: 3rem;
+  .message {
+    height: 5rem;
   }
-  
-  .contact-content textarea{
-    width: 5rem;
-    border: 1px solid black;
-    border-radius: 5%;
+
+  #consent {
+    margin-right: 1rem;
+  }
+
+
+  .submit {
+    background-color: #45a049;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    border-radius: 0.5rem;
+    border: none;
+  }
+
+  .submit:hover {
+    cursor: pointer;
+    background-color: #51b856;
+  }
+
+  .submit:active {
+    background-color: #45a049;
   }
 
   /*Footer*/

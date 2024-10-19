@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300&family=Merriweather:wght@700;900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -150,21 +151,29 @@
   <header id="contact-section">
     <div class="contact-hero">
       <div class="contact-content">
-        <h1 class="title">Contact us</h1>
+        <header class="title">Contact us</header>
         <div class="name">
           <div class="name_container">
-            <p class="first-name">First Name *</p>
-            <textarea autocomplete="on" class="text-box" required></textarea>
+            <p class="first-name margin_bottom_1">First Name *</p>
+            <textarea autocomplete="on" class="text-box" maxlength="40" required></textarea>
           </div>
           <div class="name_container">
-            <p class="last-name">Last Name *</p>
-            <textarea autocomplete="on" class="text-box" required></textarea>
+            <p class="last-name margin_bottom_1">Last Name *</p>
+            <textarea autocomplete="on" class="text-box" maxlength="40" required></textarea>
           </div>
         </div>
-        <p class="email">Email *</p>
-        <textarea autocomplete="on" class="text-box" required></textarea>
-        <p>If you would like to connect with the business, a nurse's universe, please select the link below to reach out to us.</p>
-        <button><a href="mailto: contact@anursesuniverse.com">contact@anursesuniverse.com</a></button>
+        <div>
+          <p class="email margin_bottom_1">Email *</p>
+          <textarea autocomplete="on" class="text-box" maxlength="40" required></textarea>
+        </div>
+        <div>
+          <p class="margin_bottom_1">Message *</p>
+          <textarea autocomplete="on" class="text-box message" maxlength="600" placeholder="What can I help you with?" required></textarea>
+        </div>
+        <div>
+          <input id="consent" type="checkbox"/><label for="consent" class="consent_text">Click the checkbox to consent to being contacted by me</label>
+        </div>
+        <button class="submit"><a>Submit</a></button>
       </div>
     </div>
   </header>
