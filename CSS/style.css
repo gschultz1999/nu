@@ -459,35 +459,51 @@
   
   /*contact section*/
   #contact-section {
-    display: grid;
     height: 100svh;
     width: 100%;
-    background-color: #fce3e6;
-    color: black;
-    justify-content: center;
+    background-color: #cef7e1;
+    display: flex;
     align-items: center;
+  }
+
+  .contact-hero {
+    margin: 0 auto;
+    /* width: 80%; */
+    padding: 3rem;
   }
   
   .contact-content {
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    border: 1px solid black;
     border-radius: 5%;
-    padding: 4rem;
+    padding: 2rem;
     width: 30rem;
-    grid-template-areas: 
-    "title title title title"
-    "first-name first-name last-name last-name"
-    "fnt fnt lnt lnt"
-    "email email email email"
-    "et et et et"
-    "p p p p"
-    "button button button button";
   }
 
   .contact-content > .title {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
+  }
+
+  .name {
+    display: flex;
+  }
+
+  .name_container {
+    width: 100%;
+    border: 1px solid black;
+  }
+
+ /*  .name_text {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  .text-box {
+    resize: none;
+    min-width: 100%;
   }
 
   
