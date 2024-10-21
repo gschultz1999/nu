@@ -8,64 +8,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300&family=Merriweather:wght@700;900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
 
   <body>
-      <header>
-      <nav class="content">
-        <div id="desktop">
-          <a href="../HTML/homepage.html" id="logo">nu</a>
-          <a href="../HTML/homepage.html/#About-us" class="link">About Us</a>
-          <a href="../HTML/homepage.html/#contact-section" class="link">Contact us</a>
+    <nav id="logo-link">
+      <div class="content" id="desktop">
+        <div class="logo_section">
+          <a href="homepage.html" id="logo" class="nu">nu</a>
+        </div>
+        <div class="nav_text">
+          <a href="homepage.html#About-us" class="link">About us</a>
+          <a href="homepage.html#contact-section" class="link">Contact us</a>
           <a href="products.html" class="link">Product</a>
           <a href="profile.html" class="link">Profile</a>
         </div>
-        <div id="mobile">
-          <a href="../HTML/homepage.html" id="logo">nu</a>
-          <a href="../HTML/homepage.html/#About-us"><img src="https://img.icons8.com/?size=512&id=85369&format=png"/></a>
-          <a href="../HTML/homepage.html/#contact-section"><img src="https://img.icons8.com/?size=512&id=2olGSGqpqGWD&format=png"/></a>
-          <a href="products.html"><img src="https://img.icons8.com/?size=512&id=9671&format=png"/></a>
-          <a href="profile.html"><img src="https://img.icons8.com/?size=512&id=7823&format=png"/></a>
-        </div>
-      </nav>
-    </header>
+      </div>
+      <div id="mobile">
+        <a href="homepage.html" id="logo-mobile">nu</a>
+        <a href="homepage.html#About-us"><img src="https://img.icons8.com/?size=512&id=85369&format=png"/></a>
+        <a href="homepage.html#contact-section"><img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=000000"/></a>
+        <a href="products.html"><img src="https://img.icons8.com/?size=512&id=9671&format=png"/></a>
+        <a href="profile.html"><img src="https://img.icons8.com/?size=100&id=teAmm8wzAnK7&format=png&color=000000"/></a>
+      </div>
+    </nav> 
 
 
 <!--Products-->
 
-
+  <main class="main">
     <div id="products-section">
       <div id="products-cta">
-        <p>One month full website access</p>
-        <h1 id="price">$20</h1>
-        <ul>
+        <p class="title">One month full website access</p>
+        <ul class="features">
           <li>2000+ test questions</li>
           <li>Customizable and Premade Digital Flash Cards</li>
           <li>Reset Profile at anytime</li>
           <li>Sectioned Subjects with adaptive test questions</li>
           <li>Review Videos</li>
         </ul>
-        <button><a href="purchase.html">Purchase</a></button>
+        <h1 class="price">$20</h1>
+        <button class="button"><a href="purchase.html">Purchase</a></button>
       </div>
     </div>
+  </main>
 
-
-    <footer>
-      <div id="contact-section">
-        <p>Contact me at gschultz1999@gmail.com</p>
-        <div>
-        <p>Social media</p>
-        <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-1024.png" class="image-container"/>
-        <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-1024.png" class="image-container"/>
-        <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-1024.png" class="image-container"/>
-        </div>
-      </div>
-
-  
-      <div id="copyright">
-        <p>© 2016 A Nurse's Universe, All Rights Reserved</p>
-      </div>
-    </footer>
+<!-- Footer -->
+  <footer class="footer">
+    <div class="copy">
+    <p>&copy; 2024 A Nurse's Universe. All rights reserved.</p>
+    </div>
+    <div class="tospp">
+    <h1><a href="https://www.frontendmentor.io/learning-paths/building-responsive-layouts--z1qCXVqkD/steps/66fe2a055832c087f232e1db/article/read">Terms of Service</a></h1>
+    <h1><a href="https://github.com/elasri21/contact-form">Privacy Policy</a></h1>
+    </div>  
+  </footer>
   <script src="../JS/script.js"></script>
   </body>
 </html>

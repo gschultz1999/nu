@@ -3,44 +3,70 @@
 * {
     margin: 0;
     padding: 0;
+    
   }
   
   html {
     font-size: 16px;
+   
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  body {
+    background-color:  rgb(166, 207, 238);
   }
   
+  main {
+    height: 100svh;
+  }
+
   /*Navigation Bar*/
-  
-  #desktop {
-    display: grid;
-    width: 100%;
-    max-height: 4rem;
-    grid-template-columns: 45% 13.75% 13.75% 13.75% 13.75%;
-    position: fixed;
-    z-index: 1;
-    padding: 1rem;
+  .content {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
   }
-  
-  
+
   #logo {
     font-family: Pacifico;
     text-decoration: none;
     color: hsl(225, 80%, 50%);
     font-size: 5rem;
+    display: inline-block;
+    line-height: 1;
     position: relative;
-    bottom: 3rem;
+    bottom: 1rem;
+  } 
+  
+  #logo:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  #logo-mobile {
+    font-family: Pacifico;
+    text-decoration: none;
+    color: hsl(225, 80%, 50%);
+    font-size: 5rem;
+    position: relative;
+    bottom: 1rem;
+    display: inline-block;
+    line-height: 1;
   }
   
   .link {
     line-height: 1.6;
-    letter-spacing: 0.1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #FFFAF0;
     text-decoration: none;
     font-family: "Merriweather";
-     position: relative;
-    bottom: 2rem;
+    min-width: 8rem;
+    margin: 1rem;
+
   }
   
   nav a:hover {
@@ -48,18 +74,25 @@
     transition: color 400ms linear;
   }
   
+  
   nav a:active {
-    font-size: .9rem;
+    color: black;
   }
   
+  #logo:active {
+    opacity: 1;
+  }
+
   #mobile {
     display: none;
   }
+  
   
   @media only screen and (max-width: 800px) {
     #desktop{
       display: none;
     }
+  
   
     #mobile {
       display: flex;
@@ -67,79 +100,92 @@
       align-content: center;
       width: 100%;
       height: 5rem;
-      z-index: 0;
+      z-index: 1;
       position: fixed;
-      padding-top: 2rem;
+      padding: 1rem;
     }
   
     #mobile img {
       width: 4rem;
       height: 4rem;
       z-index: 1;
+      margin-top: 0.5rem;
     }
   
-  }
-  /*products*/
   
+  }
+ 
+  /*products*/
+
+  .main {
+    width: 100%;
+  }
+
   #products-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10rem, 5rem;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    min-height: 35rem;
-    padding: 7rem;
-    line-height: 4rem;
+    max-width: 80%;
+    padding: 5rem;
+    margin: 0 auto;
+    border: 1px solid black;
   }
   
   #products-cta {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
     min-width: 25rem;
-    min-height: 45rem;
-    padding: 2rem;
+    max-width: 50%;
+    padding: 3rem;
     background-color: #F0F8FF;
+    line-height: 2rem;
+    border-radius: 1rem;
+    font-family: Roboto;
+    margin: 0 auto;
   }
   
   #products-cta p {
-    padding: 2rem;
-    background-color: #FAEBD7;
-    border: 1px solid black;
-    border-radius: 5px;
     font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+  }
+
+  .features {
+    margin: 2rem 1rem;
+  }
+
+  .features li {
+    margin-bottom: 1rem
   }
   
-  #price {
-    background: transparent;
+  .price {
     font-size: 3rem;
-    padding: 3rem;
+    color: red;
+    padding: 2rem 0rem;
   }
   
-  #products-cta button {
-    margin: 2rem;
+  .button {
     font-size: 1rem;
-  }
-  
-  #products-cta button {
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid black;
+    background: linear-gradient(135deg, #4CAF50, #8BC34A);
+    padding: 1em 3em;
     border-radius: 5px;
     text-decoration: none;
-    box-shadow: 0px 5px;
     cursor: pointer;
-    width: 15rem;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    border: none;
   }
+
+  .button a {
+    color: inherit;
+  }
+
   
-  #products-cta button:hover {
-    background-color: #DCDCDC;
+  .button:hover {
+    opacity: 0.9;
   }
   
   #products-cta button:active {
     position: relative;
     top: 5px;
-    color: black;
-    box-shadow: 0px 0px;
   }
   
   #products-cta li {
@@ -147,24 +193,26 @@
     font-size: 1.5rem;
   }
   
-  /*footer*/
-  #contact-section {
+  /*Footer*/
+  .footer {
     display: flex;
+    background-color: #343434;
+    padding: 3rem 2rem;
     justify-content: space-between;
-    align-items: flex-start;
-    height: 5rem;
-    width: 100%;
-    background-color: #A9A9A9;
+    align-items: center;
   }
-  
-  
-  #contact-section .image-container {
-    width: 3rem;
+
+  .copy {
+    padding-right: 2rem;
+    font-size: 1.5rem;
+    max-width: 50%;
+    color: #565656;
   }
-  
-  button a {
+
+  .tospp a{
+    padding: 1rem;
+    font-size: 2rem;
     text-decoration: none;
-    color: black;
+    color: #565656;
   }
-  
   
