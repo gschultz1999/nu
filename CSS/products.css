@@ -15,10 +15,6 @@
     text-decoration: none;
   }
 
-  body {
-    background-color:  rgb(166, 207, 238);
-  }
-  
   main {
     height: 100svh;
   }
@@ -157,7 +153,6 @@
   
   .price {
     font-size: 3rem;
-    color: red;
     padding: 2rem 0rem;
   }
   

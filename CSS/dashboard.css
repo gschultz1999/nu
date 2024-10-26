@@ -78,6 +78,7 @@ select {
 
 a {
   text-decoration: none;
+
 }
 /* Navbar */
 
@@ -98,18 +99,17 @@ a {
     align-items: center;
     border-bottom: 1px solid lightgray;
     font-size: 2rem;
+    font-family: Pacifico;
 } 
 
 .logo {
-  
+  color: hsl(225, 80%, 50%);
 }
-
 
 .navbar_box {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    align-items: center;
     border-bottom: 1px solid lightgray;
     padding: 2rem;
     gap: 1rem;
@@ -119,4 +119,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.link {
+  color: black;
 }
