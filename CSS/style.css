@@ -137,9 +137,8 @@
     line-height: 1.5;
     letter-spacing: 1px;
     color: hsla(0, 0%, 90%);
-    padding: 1rem;
+    padding: 10rem 3rem;
     align-items: center;
-    height: 100svh;
     flex-wrap: wrap;
     background-image: url("https://media.istockphoto.com/id/1292003010/photo/medical-student-at-home.jpg?s=2048x2048&w=is&k=20&c=RmEbti_IqVDpMCA7XNF2HxOZFznJ5taY119svs9GgVc=");
     background-repeat: no-repeat;
@@ -496,12 +495,12 @@
   
   /*contact section*/
   #contact-section {
-    height: 100svh;
     width: 100%;
     background-color: #cef7e1;
     display: flex;
     align-items: center;
     font-family: Roboto;
+    padding: 3rem;
   }
 
   .contact-hero {

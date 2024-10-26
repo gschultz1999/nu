@@ -26,7 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var elem = document.querySelector('.main-carousel');
   var flkty = new Flickity(elem, {
     // Options
-    cellAlign: 'left',
-    contain: true
+    cellAlign: 'center',        // Align cells to the center
+    contain: true,              // Contain cells within the carousel
+    resize: true,               // Recalculates sizes on window resize
+    percentPosition: true,      // Position cells with percentage values
+    wrapAround: true,           // Optional: enables looping of slides
+    autoPlay: 3000,  
   });
 });
