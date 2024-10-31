@@ -267,69 +267,38 @@
   
   #features-section {
     background-color: #F0F8FF;
-    padding: 15rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* gap: 1rem; */
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: Montserrat;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+  }
+
+  .labels {
+    font-size: 1.5rem;
+    border: 1px solid black;
+    padding: 1rem;
+
   }
   
   .feature-item {
     text-align: center;
-    border: 1px solid black;
     padding: 1rem;
-    border-radius: 1rem;
-  }
-  
-  .grid-col-span2 {
-    grid-column: span 2;
-  }
-
-  .grid-row-span2 {
-    grid-row: span 2;
-  }
-
-  .flashcards {
-    background-color: #B0E0E6;
-    color: black;
-  }
-
-  .diagrams {
-    background-color: #FFDAB9;
-  }
-
-  .tests {
-    background-color: #E6E6FA;
-  }
-
-  .videos {
-    background-color: #4682B4;
-    color: white;
-  }
-  
-  .profile {
-    background-color: #FAF0E6;
   }
 
   .feature_section_title {
-    padding: 1em;
-    font-size: 2rem;
+    margin-bottom: 1rem;
   }
-  
-  .description {
-    padding: 1rem;
-    font-size: 1.5rem;
-  }
-  
-  .image {
-    padding: 1rem;
-  }
-  
 
-  .image-container {
-    height: auto;
-    /* max-width: 20rem;
-    min-width: 10rem; */
-    width: 100%;
+  .description {
+    font-weight: 500;
+    font-size: 1.2rem;
   }
   
   @media (max-width: 60rem) {
