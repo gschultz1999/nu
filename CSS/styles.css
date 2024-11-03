@@ -1,18 +1,212 @@
 /* styles.css */
 
-body {
+/* Universal */
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  
+  .center {
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .margin_bottom_1 {
+    margin-bottom: .5rem;
+  }
+  
+  .container_middle {
+    max-width: 80%;
+    border: 1px solid black;
+  }
+  
+  
+  .text_center {
+    text-align: center;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100svh 
+  }
+
+  main {
+    flex-grow: 1;
+  }
+
+/* Navigation */
+
+
+.content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    box-shadow: 5px 1px 10px 5px rgb(204, 203, 203);
+  }
+  
+  #logo {
+    font-family: Pacifico;
+    text-decoration: none;
+    color: hsl(225, 80%, 50%);
+    font-size: 5rem;
+    display: inline-block;
+    line-height: 1;
+    position: relative;
+    bottom: 1rem;
+  } 
+  
+  #logo:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  #logo-mobile {
+    font-family: Pacifico;
+    text-decoration: none;
+    color: hsl(225, 80%, 50%);
+    font-size: 5rem;
+    position: relative;
+    bottom: 1rem;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  .nav_text {
+    display: flex;
+  }
+  
+  .link {
+    line-height: 1.6;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-family: "Montserrat";
+    margin: 1rem;
+  }
+  
+  .login {
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #4CAF50, #8BC34A); /* Gradient for modern look */
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 500ms ease, color 500ms ease;
+    font-weight: 700;
+  }
+  
+  .login a {
+    color: black;
+  }
+  
+  .signup {
+    transition: transform 500ms ease, color 500ms ease; /* Smooth transition */
+    display: inline-block;
+    padding-left: 2rem;
+    font-weight: 700;
+  }
+  
+  
+  .image-container {
+    width: 5rem;
+    transition: transform 500ms ease;
+    
+  }
+  
+  .login:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #4CA050, #8BB34A);
+    color: hsla(0, 0, 20%);
+  }
+  
+  .login:active {
+    transform:scaleX(1);
+    background: linear-gradient(135deg, #4C9A50, #8BA34A);
+    color: hsla(0, 0, 50%);
+  }
+  
+  .signup:hover {
+    transform: scale(1.1);
+    color: hsla(0, 0%, 80%);
+  }
+  
+  .signup:active {
+    transform: scale(1);
+    color: hsla(0, 0%, 70%);
+  }
+  
+  #logo:active {
+    opacity: 1;
+  }
+  
+  .image-container:hover {
+    transform: scale(1.1);
+  }
+  
+  #mobile {
+    display: none;
+  }
+  
+  
+  @media only screen and (max-width: 800px) {
+    #desktop{
+      display: none;
+    }
+  
+    .signup {
+      text-align: center;
+      padding: 0.5rem;
+    }
+  
+    #mobile {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      width: 100%;
+      z-index: 1;
+      position: fixed;
+      padding: 1rem;
+    }
+  
+    .login {
+      padding: 1em 3em;
+    }
+  
+  }
+  
+/* Main */
+.main {
+    padding: 10rem;
+}
+
+.hero {
+    width: 50%;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .form-container {
     width: 300px;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgb(240, 241, 250);
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -55,3 +249,27 @@ input[type="text"] {
 .button:hover {
     background-color: #218838;
 }
+
+
+/*Footer*/
+.footer {
+    display: flex;
+    background-color: #343434;
+    padding: 2rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copy {
+    padding-right: 1rem;
+    font-size: 1rem;
+    max-width: 50%;
+    color: #565656;
+  }
+
+  .tospp a{
+    padding: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #565656;
+  }

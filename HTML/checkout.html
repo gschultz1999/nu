@@ -1,34 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Nurse's Universe</title>
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300&family=Merriweather:wght@700;900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="form-container">
-        <h2>Checkout</h2>
-        <form id="checkoutForm">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+        <!-- Navbar -->
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="card-number">Card Number:</label>
-            <input type="text" id="card-number" name="card-number" required>
-
-            <label for="expiry-date">Expiry Date:</label>
-            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
-
-            <label for="cvc">CVC:</label>
-            <input type="text" id="cvc" name="cvc" required>
-
-            <button type="submit" class="button">Complete Purchase</button>
-        </form>
+ <nav id="logo-link">
+    <div class="content" id="desktop">
+      <div class="logo_section">
+        <a href="homepage.html" id="logo" class="nu">nu</a>
+      </div>
+      <div class="nav_text">
+          <a href="signup.html" class="link signup">Sign up</a>
+        <button class="login">
+          <a href="signin.html" class="link">Login</a>
+        </button>
+      </div>
+      <a href="dashboard.html" class="image-container">
+        <img src="https://img.icons8.com/?size=100&id=2yC9SZKcXDdX&format=png&color=000000" class="image"/>
+      </a>
     </div>
+    <div id="mobile">
+      <div>
+        <a href="signup.html" class="link signup">Sign up</a>
+        <button class="login">
+        <a href="signin.html" class="link">Login</a>
+        </button>
+      </div>
+      <a href="dashboard.html" class="image-container">
+        <img src="https://img.icons8.com/?size=100&id=H101gtpJBVoh&format=png&color=FFFFFF" class="image"/>
+      </a>
+    </div>
+  </nav> 
 
+
+    <main class="main">
+        <div class="hero">
+            <div class="form-container">
+                <h2>Checkout</h2>
+                <form id="checkoutForm">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+                    <label for="cvc">CVC:</label>
+                    <input type="text" id="cvc" name="cvc" required>
+
+                    <button type="submit" class="button">Complete Purchase</button>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
+<footer class="footer">
+    <div class="copy">
+    <p>&copy; 2024 A Nurse's Universe. All rights reserved.</p>
+    </div>
+    <div class="tospp">
+    <h1><a href="https://www.frontendmentor.io/learning-paths/building-responsive-layouts--z1qCXVqkD/steps/66fe2a055832c087f232e1db/article/read">Terms of Service</a></h1>
+    <h1><a href="https://github.com/elasri21/contact-form">Privacy Policy</a></h1>
+    </div>  
+  </footer>
 </html>
