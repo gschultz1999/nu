@@ -76,7 +76,7 @@ img {
 }
 
 .nav_text {
-  display: inline-block;
+  display: flex;
 }
 
 .link {
@@ -85,7 +85,6 @@ img {
   color: white;
   text-decoration: none;
   font-family: "Montserrat";
-  min-width: 8rem;
   margin: 1rem;
 }
 
@@ -94,12 +93,15 @@ img {
   border: none;
   border-radius: 50px;
   background: linear-gradient(135deg, #4CAF50, #8BC34A); /* Gradient for modern look */
-  color: black;
   font-family: 'Arial', sans-serif;
   font-size: 1rem;
   cursor: pointer;
   transition: transform 500ms ease, color 500ms ease;
   font-weight: 700;
+}
+
+.login a {
+  color: black;
 }
 
 .signup {
@@ -109,14 +111,23 @@ img {
   font-weight: 700;
 }
 
+
+.image-container {
+  width: 5rem;
+  transition: transform 500ms ease;
+  
+}
+
 .login:hover {
   transform: scale(1.1);
   background: linear-gradient(135deg, #4CA050, #8BB34A);
+  color: hsla(0, 0, 20%);
 }
 
 .login:active {
   transform:scaleX(1);
   background: linear-gradient(135deg, #4C9A50, #8BA34A);
+  color: hsla(0, 0, 50%);
 }
 
 .signup:hover {
@@ -133,6 +144,10 @@ img {
   opacity: 1;
 }
 
+.image-container:hover {
+  transform: scale(1.1);
+}
+
 #mobile {
   display: none;
 }
@@ -143,25 +158,24 @@ img {
     display: none;
   }
 
+  .signup {
+    text-align: center;
+    padding: 0.5rem;
+  }
 
   #mobile {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     width: 100%;
-    height: 5rem;
     z-index: 1;
     position: fixed;
     padding: 1rem;
   }
 
-  #mobile img {
-    width: 4rem;
-    height: 4rem;
-    z-index: 1;
-    margin-top: 0.5rem;
+  .login {
+    padding: 1em 3em;
   }
-
 
 }
 
@@ -243,9 +257,9 @@ img {
 
 .problem_content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
  .center {
@@ -308,9 +322,6 @@ img {
   font-family: Montserrat;
 }
 
-/* .feature-item {
-  border: 1px solid black;
-} */
 
 .title {
   font-size: 2rem;
