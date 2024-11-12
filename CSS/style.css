@@ -1,5 +1,7 @@
 /*universal styles*/
-
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 * {
   margin: 0;
@@ -10,7 +12,7 @@
 
 
 html {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 
@@ -30,7 +32,6 @@ img {
   max-width: 80%;
   border: 1px solid black;
 }
-
 
 .text_center {
   text-align: center;
@@ -188,13 +189,14 @@ img {
   line-height: 1.5;
   letter-spacing: 1px;
   color: hsla(0, 0%, 90%);
-  padding: 10rem 3rem;
+  padding: 20rem 3rem;
   align-items: center;
   flex-wrap: wrap;
   background-image: url("https://media.istockphoto.com/id/1292003010/photo/medical-student-at-home.jpg?s=2048x2048&w=is&k=20&c=RmEbti_IqVDpMCA7XNF2HxOZFznJ5taY119svs9GgVc=");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  font-family: Montserrat;
 }
 
 
@@ -253,6 +255,7 @@ img {
   padding: 5rem;
   text-align: center;
   margin: 0 auto;
+  font-family: Montserrat;
 }
 
 .problem_content {
@@ -278,6 +281,7 @@ img {
 
 .vid {
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .intro {
@@ -299,6 +303,7 @@ img {
   gap: 3rem;
   text-align: center;
   margin: 0 auto;
+  font-family: Montserrat;
 }
 
 
@@ -344,14 +349,22 @@ img {
   border-radius: 10px;
   margin: 0 auto;
   width: 50%;
-  max-width: 40rem;
+  max-width: 35rem;
+  height: auto;
+  
 }
 
 .carousel-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
-  padding: 5rem;
-  width: 100%;
   text-align: center;
+  width: 80%;
+  height: auto;
+  padding: 3rem;
+  font-size: clamp(1rem, 5vw, 3rem);
 }
 
 .feature_section_title {
@@ -365,15 +378,15 @@ img {
 
 @media (max-width: 40rem) {
   .main-carousel {
-    width: 80%;
+    width: 100%;
   }
 
   .carousel-cell {
-    padding: 2rem;
+    padding: 3rem;
   }
 
   .description {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -383,9 +396,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100svh; /* Full viewport height for better centering */
-  padding: 2rem;
+  padding: 20rem 2rem;
   background-color: #f9f9f9;
+  font-family: Montserrat;
 }
 
 #products-cta {
@@ -407,16 +420,17 @@ img {
   margin-bottom: 1.5rem;
   font-family: 'Arial', sans-serif; /* Better typography */
   color: #333;
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 #products-cta button {
-  padding: 0.75rem 1.5rem;
+  padding: 0.75em 1.5em;
   border: none;
   border-radius: 5px;
   background: linear-gradient(135deg, #4CAF50, #8BC34A); /* Gradient for modern look */
   color: white;
   font-family: 'Arial', sans-serif;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   cursor: pointer;
   transition: all 0.3s ease; /* Smooth transition */
 }
@@ -439,6 +453,7 @@ button a {
   background: linear-gradient(to left, #3fd1d6, #a8dadc);
   width: 100%;
   padding: 10rem 3rem;
+  font-family: Montserrat;
 }
 
 .about_us_container {
@@ -470,14 +485,15 @@ button a {
 .about {
   font-size: clamp(2rem, 2vw, 4rem);
   font-weight: 900;
-  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  margin: 0 auto;
   
 }
 
 .about_us_title {
   font-size: clamp(1.5rem, 1vw, 2.5rem);
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
  
   
 }
@@ -527,7 +543,7 @@ button a {
 
 .contact-hero {
   margin: 0 auto;
-  
+  max-width: 100%;
 }
 
 .contact_us_title {
@@ -541,25 +557,24 @@ button a {
   background-color: white;
   border-radius: 1rem;
   padding: 2rem;
-  /* width: 30rem; */
   gap: 2rem;
-  max-width: 30rem;
-  min-width: 40rem;
+  max-width: 100%;
+
 }
 
 .name {
   display: flex;
   gap: 0.5rem;
+  max-width: 100%;
 }
 
 .name_container {
   width: 100%;
-  
 }
 
 .text-box {
   resize: none;
-  min-width: 100%;
+  width: clamp(100%, 100%, 100%);
   border-radius: 0.3rem;
   font-size: 1rem;
   font-weight: 600;
@@ -596,6 +611,12 @@ button a {
   background-color: #45a049;
 }
 
+@media (max-width: 37.5rem) {
+  .name {
+    flex-direction: column;
+  }
+}
+
 /*Footer*/
 .footer {
   display: flex;
@@ -617,4 +638,10 @@ button a {
   font-size: 2rem;
   text-decoration: none;
   color: #565656;
+}
+
+@media (max-width: 600px) {
+  * {
+    text-align: center;
+  }
 }
