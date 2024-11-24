@@ -20,8 +20,10 @@ html {
   text-align: center;
 }
 
-img {
-  max-width: 100%;
+img,
+video {
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 .margin_bottom_1 {
