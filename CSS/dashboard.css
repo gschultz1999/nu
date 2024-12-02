@@ -1,4 +1,4 @@
-// https://piccalil.li/blog/a-modern-css-reset
+https://piccalil.li/blog/a-modern-css-reset
 
 /* Box sizing rules */
 *,
@@ -75,6 +75,15 @@ select {
   }
 }
 
+body {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  grid-template-rows: auto;
+}
+
+main {
+  grid-column: 2;
+}
 
 a {
   text-decoration: none;
@@ -125,3 +134,44 @@ a {
   color: black;
 }
 
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 0 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10rem;
+}
+
+.image {
+  width: 3rem;
+}
+
+.image + .image {
+  padding-left: 2rem;
+}
+
+/* Main */
+
+.hero__1 {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.hero__1-box {
+  border: 1px solid black;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
