@@ -83,6 +83,7 @@ body {
 
 main {
   grid-column: 2;
+  background-color: rgba(204, 229, 255, 30%);
 }
 
 a {
@@ -96,7 +97,7 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 4fr 1fr;
     border-right: 1px solid lightgray;
-    max-width: 30rem;
+    width: 15rem;
     min-height: 100%;
     position: fixed;
     letter-spacing: 1px;
@@ -134,13 +135,18 @@ a {
   color: black;
 }
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+}
+
 /* Header */
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem 0 0;
+  padding: 1rem 2rem 0 2rem;
 }
 
 .row {
@@ -152,10 +158,16 @@ a {
 
 .image {
   width: 3rem;
+  transition: transform ease 300ms;
 }
 
 .image + .image {
   padding-left: 2rem;
+}
+
+.image:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 /* Main */
@@ -166,12 +178,25 @@ a {
   justify-content: space-between;
 }
 
+.hero__1-column {
+  padding: 2rem;
+}
+
 .hero__1-box {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 100%;
   border: 1px solid black;
 }
 
 canvas {
   display: block;
   margin: 0 auto;
-  max-width: 300px;
+  width: 2rem;
+}
+
+.hero__1-statistics {
+  font-size: 1.5rem;
+  font-weight: 300;
 }

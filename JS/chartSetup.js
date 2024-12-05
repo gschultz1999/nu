@@ -14,10 +14,12 @@ const data1 = {
 const options1 = {
     plugins: { legend: { 
         display: true,
-        position: 'bottom' 
+        position: 'bottom',
+        responsive: true,
+        maintainAspectRation: true,
     } 
 },
-    cutout: '70%', // Donut effect
+    cutout: '50%', // Donut effect
 };
 new Chart(ctx1, {
     type: 'doughnut',
@@ -39,10 +41,11 @@ const data2 = {
 const options2 = {
     plugins: { legend: { 
         display: true,
-        position: 'bottom'
-    } 
+        position: 'bottom',
+        responsive: true,
+        maintainAspectRation: true,    } 
 },
-    cutout: '70%',
+    cutout: '50%',
 };
 new Chart(ctx2, {
     type: 'doughnut',
